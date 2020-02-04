@@ -20,7 +20,7 @@ Using Electron and nativefier in the background. I created the app for Linux (x6
 
 Basically the script install.sh just executed individually
 
-`
+<code>
 #!/bin/bash
 # unpack files
 tar -zxvf files.tar.gz
@@ -40,5 +40,5 @@ Categories=Office;ProjectManagement;" > "asana.desktop"
 # copy desktop file to applications
 cp asana.desktop $HOME/.local/share/applications
 echo "Sucessfully installed Asana. Type Asana into your menu to launch"
-`
+</code>
 

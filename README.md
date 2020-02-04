@@ -26,11 +26,13 @@ Basically the script install.sh just executed individually
 tar -zxvf files.tar.gz
   </code>
   
+  
   <code>
 # permissions (might not work if not sudo)
 chmod +x Asana
 chmod +x asana.desktop
 </code>
+
 
 <code>
 # create desktop entry
@@ -45,6 +47,7 @@ Icon=$HOME/Asana-linux-x64/resources/app/icon.png
 Categories=Office;ProjectManagement;" > "asana.desktop"
 </code>
 
+<code>
 # copy desktop file to applications
 cp asana.desktop $HOME/.local/share/applications
 echo "Sucessfully installed Asana. Type Asana into your menu to launch"

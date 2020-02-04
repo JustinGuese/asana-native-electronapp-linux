@@ -5,5 +5,40 @@ Using Electron and nativefier in the background. I created the app for Linux (x6
 
 # Install
 
-1. Clone repo to home folder (or anywhere, but then you will need to edit the .desktop file)
-`This is code`
+1. Clone repo to home folder (or anywhere, but then you will need to edit the .desktop file) and cd into it
+
+`git clone https://github.com/JustinGuese/asana-native-electronapp-linux.git && cd asana-native-electronapp-linux`
+
+2. Make install.sh executable and autoinstall (or use manual install below)
+
+`chmod +x install.sh && ./install.sh`
+
+3. Find Asana in your Unity menu (normal application menu)
+
+
+## Manual Install
+
+Basically the script install.sh just executed individually
+
+`
+#!/bin/bash
+# unpack files
+tar -zxvf files.tar.gz
+# permissions (might not work if not sudo)
+chmod +x Asana
+chmod +x asana.desktop
+# create desktop entry
+# edit $HOME if install folder is somewhere else
+echo "[Desktop Entry]
+Comment=Asana created with nativefier
+Terminal=false
+Name=Asana
+Exec=$HOME/Asana-linux-x64/Asana
+Type=Application
+Icon=$HOME/Asana-linux-x64/resources/app/icon.png
+Categories=Office;ProjectManagement;" > "asana.desktop"
+# copy desktop file to applications
+cp asana.desktop $HOME/.local/share/applications
+echo "Sucessfully installed Asana. Type Asana into your menu to launch"
+`
+

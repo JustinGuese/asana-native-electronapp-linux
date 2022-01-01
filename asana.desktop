@@ -1,0 +1,8 @@
+[Desktop Entry]
+Comment=Asana created with nativefier
+Terminal=false
+Name=Asana
+Exec=/home/jguese/Asana-linux-x64/Asana
+Type=Application
+Icon=/home/jguese/Asana-linux-x64/resources/app/icon.png
+Categories=Office;ProjectManagement;

@@ -31,9 +31,9 @@ If you want to create a desktop icon for unity feel free to just run install.sh 
 ## build
 
 1. install nativefier `npm install -g nativefier` https://github.com/nativefier/nativefier
-2. 
+2. run `./build.sh` script
 
-## Zip creation
+### Zip creation and unpacking
 
 to honor git max filesize
 

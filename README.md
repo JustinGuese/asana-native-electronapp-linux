@@ -1,5 +1,7 @@
 # Overview
 
+Created using https://github.com/nativefier/nativefier
+
 I am not working for Asana, and this is just a basic electron app, meaning I am not responsible for lincensing, support and so on regarding the product and company Asana.
 
 Installs Asana website as a "native" Ubuntu / Linux App (Unity Desktop). 
@@ -25,6 +27,11 @@ There is an executable in the Asana-linux-x64 folder called Asana. You might nee
 Just execute it manually, or copy it to your executable path, e.g. with ubuntu /usr/local/bin .
 
 If you want to create a desktop icon for unity feel free to just run install.sh or follow the steps on creating a .desktop entry.
+
+## build
+
+1. install nativefier `npm install -g nativefier` https://github.com/nativefier/nativefier
+2. 
 
 ## Zip creation
 
